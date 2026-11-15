@@ -2,7 +2,7 @@ import axios from "axios";
 import { clearAuthToken, getAuthToken } from "../utils/auth";
 
 const axiosClient = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:5000",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "http://18.61.33.55:5000",
   headers: {
     "Content-Type": "application/json",
   },
