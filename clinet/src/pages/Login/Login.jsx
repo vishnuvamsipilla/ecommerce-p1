@@ -92,7 +92,7 @@ export default function Login() {
         </div>
 
         <div className={styles.loginHeader}>
-          <h1 className={styles.loginTitle}>Welcome back</h1>
+          <h1 className={styles.loginTitle}>Welcome back changes</h1>
           <p className={styles.loginSubtitle}>
             Enter your credentials to access your account
           </p>
