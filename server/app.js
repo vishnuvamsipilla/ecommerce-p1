@@ -14,6 +14,7 @@ const RateLimiter = rateLimit({
 });
 
 app.use(cors());
+// nn
 const authRouter = require("./routes/auth.js");
 const categoryRouter = require("./routes/category.js");
 const productRouter = require("./routes/products.js");
