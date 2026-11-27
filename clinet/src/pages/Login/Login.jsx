@@ -34,6 +34,8 @@ export default function Login() {
       });
       const token = response.data?.data?.token;
 
+      console.log("Login response:", response.data);
+
       if (!token) {
         throw new Error(
           "Login response did not include an authentication token.",

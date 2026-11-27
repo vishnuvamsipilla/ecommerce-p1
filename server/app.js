@@ -8,7 +8,7 @@ const app = express();
 
 const RateLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  limit: 20,
+  limit: 60,
   standardHeaders: "draft-7",
   legacyHeaders: false,
 });
@@ -22,6 +22,8 @@ const globalErrorHanler = require("./middlewares/errorHandler.js");
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
+
+ 
 });
 
 app.use(express.json());
