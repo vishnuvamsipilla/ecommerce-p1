@@ -51,7 +51,7 @@ export default function Login() {
       Cookies.set("token", token, {
         expires: 7,
         sameSite: "lax",
-        secure: import.meta.env.PROD,
+        secure: window.location.protocol === "https:",
       });
       reset();
       navigate(tokenPayload.role === "admin" ? "/admin/dashboard" : "/");
